@@ -8,7 +8,7 @@ $con=mysqli_connect('localhost','root','','logindetails');
     echo "database bot connected";
 }
 else{
-    echo "database conntect";
+    echo "database is conntect";
 }
 
 
