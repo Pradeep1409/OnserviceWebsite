@@ -1,0 +1,1115 @@
+ <!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Carpenter</title>
+      <link rel="stylesheet" href="carpenter.css">
+      <script src="https://kit.fontawesome.com/c1332a9e56.js" crossorigin="anonymous"></script>
+      <script src="carpenter.js"></script>
+      <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="carpenter.css" />
+      <script src="script.js"></script>
+   </head>
+   <body>
+      <nav class="ocs_nav">
+         <div class="ocs_logo">
+            <img src="images/NEW-LOGO-PNG-(EDITED).png" alt="logo">
+            <span>OnCare<br>Services</span>
+         </div>
+         <div class="ocs_nav_input">
+            <input type="text" placeholder=" Search our website">
+            <button><i class="fas fa-search fa-lg"></i></button>
+         </div>
+         <div class="btn_area">
+            <div class="Downapp_btn">
+               <button>   
+               <span><a href="#">Download App</a></span>
+               </button>
+            </div>
+            <div class="login_btn">
+               <button><a href="login2.html">Login</a></button>
+            </div>
+            <div class="more_btn">
+               <button>More <i class="fas fa-chevron-down fa-xs"></i></button>
+            </div>
+         </div>
+      </nav>
+      <div id="menuside-bar">
+         <div id="menuside" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+         </div>
+         <ul class="navside" id="navside" onclick="onClickMenu()">
+            <li><a href="#Frequency">frequency Booking</a></li>
+            <li><a href="#balcony">Balcony</a></li>
+            <li><a href="#bed">Bed</a></li>
+            <li><a href="#cupboard">Cupboard & drawer</a></li>
+            <li><a href="#door">Door</a></li>
+            <li><a href="#drill">Drill & hang</a> </li>
+            <li><a href="#funiture">Funiture assembly</a></li>
+            <li><a href="#funiture">Funiture Repair</a> </li>
+            <li><a href="#tv">TV</a></li>
+            <li><a href="#window"> Window & curtain</a></li>
+            <li><a href="#custom">Custom</a></li>
+            <li><a href="#ac">AC frame</a></li>
+            <li><a href="#something">something else??</a></li>
+         </ul>
+      </div>
+      <div class="menuside-bg" id="menuside-bg"></div>
+      <div class="ocs_nav2">
+         <div class="ocs_nav2_links">
+            <ul>
+               <li><a href="#Home">Home</a></li>
+               <li><a href="#services "> Services</a></li>
+               <li><a href="#blog "> Offers</a></li>
+               <li><a href="#About"> Blog</a></li>
+               <li><a href="#Service"> About</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="navbar">
+         <a href="#" id="scroll" style="display: none;"><span></span></a>
+         <div class="menubar">
+            <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+               <svg width="50" height="50" viewBox="0 0 100 100">
+                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+               </svg>
+            </button>
+         </div>
+         <!-- <h1>Carpenter</h1> -->
+         <!-- back to top -->
+         <!-- navbar for responsive -->
+         <div class="responsivnav">
+            <div id="menu-bar">
+               <div id="menu" onclick="onClickMenu()">
+                  <div id="bar1" class="bar"></div>
+                  <div id="bar2" class="bar"></div>
+                  <div id="bar3" class="bar"></div>
+               </div>
+               <ul class="navres" id="nav" onclick="onClickMenu()">
+                  <li><a href="#Frequency">frequency Booking</a></li>
+                  <li><a href="#balcony">Balcony</a></li>
+                  <li><a href="#bed">Bed</a></li>
+                  <li><a href="#cupboard">Cupboard & drawer</a></li>
+                  <li><a href="#door">Door</a></li>
+                  <li><a href="#drill">Drill & hang</a> </li>
+                  <li><a href="#funiture">Funiture assembly</a></li>
+                  <li><a href="#funiture">Funiture Repair</a> </li>
+                  <li><a href="#tv">TV</a></li>
+                  <li><a href="#window"> Window & curtain</a></li>
+                  <li><a href="#custom">Custom</a></li>
+                  <li><a href="#ac">AC frame</a></li>
+                  <li><a href="#something">something else??</a></li>
+               </ul>
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+         </div>
+      </div>
+      </div>
+      <!-- navbar  -->
+      <div id="titlepage">
+         <h1>Carpenter</h1>
+      </div>
+      <div class="poster_cont4">
+         <div class="inpc4_cont">
+            <div class="pc_leftbtn">
+               <pre id="sidearr"><</pre>
+            </div>
+            <div class="minposter4">
+               <a href="#Frequency"> <img src="images/carpenter.jpg"></a>
+               <a href="#Frequency"></a> <span class="inp_tilte"> Frequently Book </span><br></a>
+            </div>
+            <div class="minposter4">
+               <a href="#balcony"> <img src="images/4.jpg"></a>
+               <a href="#balcony"><span class="inp_title"> Balcony </span><br></a>
+            </div>
+            <div class="minposter4">
+               <a href="#bed"><img src="images/5.jpg"></a>
+               <a href="#bed"><span class="inp_tilte">  Bed </span><br></a>
+            </div>
+            <div class="minposter4">
+               <a href="#cupboard"><img src="images/6.jpg"></a>
+               <a href="#cupboard"><span class="inp_tilte"> Cupboard & drawer </span><br></a>
+            </div>
+            <div class="minposter4">
+               <a href="#door"> <img src="images/1.jpeg"></a>
+               <a href="#door"> <span class="inp_tilte"> Door </span><br></a>
+            </div>
+            <div class="minposter4">
+               <a href="#drill"><img src="images/2.jpeg"></a>
+               <a href="#drill"><span class="inp_tilte"> Drill & hang </span><br></a>
+            </div>
+            <div class="minposter4">
+               <a href="#funiture"><img src="images/4.jpg"></a>
+               <a href="#funiture"><span class="inp_tilte"> Funiture assembly </span><br></a>
+            </div>
+            <div class="minposter4">
+               <a href="#tv"> <img src="images/3.jpeg"></a>
+               <a href="#tv"><span class="inp_tilte"> TV </span><br></a>
+            </div>
+            <div class="minposter4">
+               <a href="#window"><img src="images/4.jpg"></a>
+               <a href="#window"> <span class="inp_tilte"> Window & curtain </span><br></a>
+            </div>
+            <div class="minposter4">
+               <a href="#custom"><img src="images/5.jpg"></a>
+               <a href="#custom"> <span class="inp_tilte"> custom  </span><br></a>
+            </div>
+            <div class="minposter4">
+               <a href="#ac"><img src="images/6.jpg"></a>
+               <a href="#ac"><span class="inp_tilte"> AC frame </span><br></a>
+            </div>
+            <div class="minposter4">
+               <a href="#something"><img src="images/3.jpeg"></a>
+               <a href="#something"><span class="inp_tilte">something else ? </span><br></a>
+            </div>
+            <div class="pc_rightbtn">
+               <pre>></pre>
+            </div>
+         </div>
+      </div>
+      <hr>
+      <!-- mianpage -->
+      <div class="container1" id="Frequency">
+         <div class="cart">
+            <p class="hearder">Frequency Booking</p>
+         </div>
+         <div class="firstrow">
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span class="price">
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container1">
+         <div class="firstrow">
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container1" id="balcony">
+         <div class="cart">
+            <p class="hearder">Balcony</p>
+         </div>
+         <div class="firstrow">
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container1" id="bed">
+         <div class="cart">
+            <p class="hearder">Bed</p>
+         </div>
+         <div class="firstrow">
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container1" id="cupboard">
+         <div class="cart">
+            <p class="hearder">Cupboard & drawer</p>
+         </div>
+         <div class="firstrow">
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container1" id="door">
+         <div class="cart">
+            <p class="hearder">Door</p>
+         </div>
+         <div class="firstrow">
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container1" id="drill">
+         <div class="cart">
+            <p class="hearder">Drill & hang</p>
+         </div>
+         <div class="firstrow">
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container1" id="funiture">
+         <div class="cart">
+            <p class="hearder">Funiture assembly</p>
+         </div>
+         <div class="firstrow">
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container1">
+         <div class="cart">
+            <p class="hearder">Funiture Repair</p>
+         </div>
+         <div class="firstrow">
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container1" id="tv">
+         <div class="cart">
+            <p class="hearder">TV</p>
+         </div>
+         <div class="firstrow">
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container1" id="window">
+         <div class="cart">
+            <p class="hearder">Window & curtain</p>
+         </div>
+         <div class="firstrow">
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container1" id="custom">
+         <div class="cart">
+            <p class="hearder">Custom</p>
+         </div>
+         <div class="firstrow">
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container1" id="ac">
+         <div class="cart">
+            <p class="hearder">AC frame</p>
+         </div>
+         <div class="firstrow">
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container1" id="something">
+         <div class="cart">
+            <p class="hearder">something else ?</p>
+         </div>
+         <div class="firstrow">
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+            <div class="maincart">
+               <img src="images/carpenter.jpg">
+               <h3>title</h3>
+               <span>
+                  <p class="specialprice"> Special price:-</p>
+               </span>
+               <div id="rs">
+                  <span>Rs </span><span id="rupes">100</span>
+               </div>
+               <hr>
+               <ul>
+                  <li>installation of two wall decor item </li>
+                  <li>best deal to make home beautiful</li>
+               </ul>
+               <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" value="0" />
+                  <span class="plus">+</span>
+               </div>
+            </div>
+         </div>
+      </div>
+         
+   </body>
+</html>
